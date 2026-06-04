@@ -1,0 +1,48 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Arun | IT Support Engineer{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Arun Kumar</h1>
+    <p class="subtitle">IT Support Engineer</p>
+    <p class="skills-typed">
+        <span id="skills-container">• </span><span class="cursor">|</span>
+    </p>
+    <div class="btn-group">
+        <a href="/skills/" class="btn btn-primary">Explore Skills</a>
+        <a href="/skills/#contact" class="btn btn-outline">Contact</a>
+    </div>
+</section>
+
+<script>
+const skills = ["Python", "Linux", "Oracle", "SQL", "IBM CMOD"];
+let skillIndex = 0;
+let charIndex = 0;
+const container = document.getElementById('skills-container');
+
+function typeSkill() {
+    if (skillIndex >= skills.length) {
+        document.querySelector('.cursor').style.display = 'none';
+        return;
+    }
+
+    const currentSkill = skills[skillIndex];
+
+    if (charIndex < currentSkill.length) {
+        container.innerHTML += currentSkill[charIndex];
+        charIndex++;
+        setTimeout(typeSkill, 100);
+    } else {
+        skillIndex++;
+        charIndex = 0;
+        if (skillIndex < skills.length) {
+            container.innerHTML += ' <span class="separator">•</span> ';
+        }
+        setTimeout(typeSkill, 400);
+    }
+}
+
+typeSkill();
+</script>
+{% endblock %}

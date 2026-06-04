@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Arun | Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="logo">Arun Kumar.</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/skills/">Skills</a>
+            <a href="/skills/#projects">Projects</a>
+            <a href="/skills/#contact">Contact</a>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <p>© 2026 Arun Kumar • IT Support Engineer</p>
+    </footer>
+
+</body>
+</html>

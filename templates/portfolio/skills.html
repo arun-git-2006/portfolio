@@ -1,0 +1,106 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Arun | IT Support Engineer{% endblock %}
+
+{% block content %}
+
+<!-- SKILLS SECTION -->
+<div id="skills" class="section" style="padding-top: 120px;">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Programming</h3>
+            <p>Python, Shell/Bash/KSH, SQL, PL/SQL</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Operating System</h3>
+            <p>Linux, RHEL, Ubuntu</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Database</h3>
+            <p>Oracle DB, SQL, SQLite, MySQL</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Tools & Platform</h3>
+            <p>IBM CMOD, ServiceNow, Jira, Git & GitHub</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Monitoring</h3>
+            <p>Geneos Monitoring, Splunk, Log Analysis, Incident Management</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- PROJECTS SECTION -->
+<div id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>DB-EDMS Support Automation</h3>
+            <p>Shell scripts for automated log monitoring and incident resolution on IBM CMOD platform.</p>
+        </div>
+        
+        <div class="project-card">
+            <h3>🖥️ Server Health Check</h3>
+            <p>Bash script to monitor CPU, RAM, Disk usage and generate alerts. Runs via cron job automatically.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>🏧 ATM Transaction Monitoring System</h3>
+            <p>Monitors ATM transactions in real-time, detects anomalies, logs incidents automatically using Python, Bash & SQL.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>🎓 Student Result Management</h3>
+            <p>Manages student records, calculates grades, generates result reports using Python & SQL.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>🛒 Grocery Store Management</h3>
+            <p>Backend system to manage inventory, billing and products using Python , Bash Scripting and SQL.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>📚 Library Management System</h3>
+            <p>Manages books, members, issue/return tracking with full backend using Bash Scripting and SQL.</p>
+        </div>
+
+       <div class="project-card">
+            <h3>🔐 Password Generator</h3>
+            <p>Generates strong & secure passwords with custom length and character options using Python's secrets module.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>💰 Expense Tracker CLI</h3>
+            <p>Command-line expense manager with category-wise reports, budget alerts using Python & MySQL.</p>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-box">
+        <p>📧 <a href="mailto:kumararun3052006@gmail.com">kumararun3052006@gmail.com</a></p>
+        <p>📞 <a href="tel:+917505566405">+91 7505566405</a></p>
+        <div class="contact-links">
+ <!--           <a href="https://github.com/arun-git-2006" target="_blank">GitHub</a>-->
+            <a href="https://linkedin.com/in/arun-2006-kumar" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: center; padding-bottom: 60px;">
+    <a href="/static/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+</div>
+
+{% endblock %}
